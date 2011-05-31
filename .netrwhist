@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/etc/php5/fpm'
+let g:netrw_dirhist_2='/home/valera/.vim'
+let g:netrw_dirhist_3='/usr/local/nginx/conf'
+let g:netrw_dirhist_4='/home/valera/Projects/file_storage'
+let g:netrw_dirhist_5='/home/valera/.vim'
