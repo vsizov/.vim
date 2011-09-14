@@ -1,12 +1,14 @@
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set nocompatible
 set t_Co=256
 set background=dark
-colorscheme ir_black
+colorscheme desert
 filetype on 
 filetype plugin indent on
 
 compiler ruby
-set autochdir
+"set autochdir
 map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 set selectmode=mouse
 set mousef
@@ -49,6 +51,14 @@ vmap <F12> <ESC>:Project<CR><CR>
 nmap <C-d> :tabnext<CR>
 imap <C-d> <ESC>:tabnext<CR>
 vmap <C-d> <ESC>:tabnext<CR>
+
+nmap <C-t> :CommandT<CR>
+imap <C-d> <ESC>:CommandT<CR>
+vmap <C-d> <ESC>:CommandT<CR>
+
+nmap <F8> :NERDTree<CR>
+imap <F8> <ESC>:NERDTree<CR>
+vmap <F8> <ESC>:NERDTree<CR>
 
 nmap <C-a> :tabprevious<CR>
 imap <C-a> <ESC>:tabprevious<CR>
