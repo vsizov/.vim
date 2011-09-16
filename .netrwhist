@@ -1,2 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/load/Projects/PrettyQuick_Production/.git'
+let g:netrw_dirhist_2='/home/load/.vim/snippets'
+let g:netrw_dirhist_3='/home/load/Projects/PrettyQuick_Production/.git'
