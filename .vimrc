@@ -3,7 +3,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set nocompatible
 set t_Co=256
 set background=dark
-colorscheme railscasts
+colorscheme ir_black
 filetype on 
 filetype plugin indent on
 
@@ -31,10 +31,6 @@ nmap <F2> :w!<CR>
 imap <F2> <Esc>:w!<CR>
 vmap <F2> <Esc>:w!<CR>
 
-nmap <F3> :!p4 edit %<CR>
-imap <F3> <Esc>:!p4 edit %<CR>
-vmap <F3> <Esc>:!p4 edit %<CR>
-
 nmap <F10> :q<CR>
 imap <F10> <Esc>:q<CR>
 vmap <F10> <Esc>:q<CR>
@@ -42,10 +38,6 @@ vmap <F10> <Esc>:q<CR>
 nmap <F11> :q!<CR>
 imap <F11> <Esc>:q!<CR>
 vmap <F11> <Esc>:q!<CR>
-
-nmap <F12> :Project<CR><CR>
-imap <F12> <ESC>:Project<CR><CR>
-vmap <F12> <ESC>:Project<CR><CR>
 
 nmap <C-d> :tabnext<CR>
 imap <C-d> <ESC>:tabnext<CR>
@@ -62,14 +54,6 @@ vmap <F8> <ESC>:NERDTree<CR>
 nmap <C-a> :tabprevious<CR>
 imap <C-a> <ESC>:tabprevious<CR>
 vmap <C-a> <ESC>:tabprevious<CR>
-
-nmap <F5> :! /export/web/cnuapp/bin/cnu_env spec % --format=specdoc<cr>
-imap <F5> <ESC>:! /export/web/cnuapp/bin/cnu_env spec % --format=specdoc<cr>
-vmap <F5> <ESC>:! /export/web/cnuapp/bin/cnu_env spec % --format=specdoc<cr>
-
-nmap <F6> :! sudo /export/web/cnuapp/bin/cnu_env cucumber % -r /export/web/stable_pi/cnu_cucumber <cr>
-imap <F6> <ESC>:! sudo /export/web/cnuapp/bin/cnu_env cucumber % -r /export/web/stable_pi/cnu_cucumber <cr>
-vmap <F6> <ESC>:! sudo /export/web/cnuapp/bin/cnu_env cucumber % -r /export/web/stable_pi/cnu_cucumber <cr>
 
 nmap <F7> /
 imap <F7> <ESC>/
