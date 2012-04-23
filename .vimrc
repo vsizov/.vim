@@ -6,7 +6,8 @@ filetype on
 filetype plugin indent on
 
 compiler ruby
-
+set autochdir
+map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 set selectmode=mouse
 set mousef
 :set mouse=a
