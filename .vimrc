@@ -59,6 +59,10 @@ nmap <C-d> :tabnext<CR>
 imap <C-d> <ESC>:tabnext<CR>
 vmap <C-d> <ESC>:tabnext<CR>
 
+nmap <F8> :NERDTree<CR>
+imap <F8> <ESC>:NERDTree<CR>
+vmap <F8> <ESC>:NERDTree<CR>
+
 nmap <C-a> :tabprevious<CR>
 imap <C-a> <ESC>:tabprevious<CR>
 vmap <C-a> <ESC>:tabprevious<CR>
