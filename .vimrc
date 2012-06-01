@@ -6,16 +6,15 @@ set background=dark
 colorscheme ir_black
 filetype on 
 filetype plugin indent on
-
+:set mouse=a
 compiler ruby
 map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 set selectmode=mouse
 set mousef
-:set mouse=a
 
 set runtimepath+=/usr/share/vim/addons
 
-set clipboard+=unamed  " Yanks go on clipboard instead
+set clipboard=autoselect,unnamed,exclude:cons\|linux
 set history=10000
 set ic   
 set tabstop=2
@@ -26,6 +25,11 @@ set nowrap
 set showmatch "Show matching brackets
 set mat=5     "Bracket blinking
 "set list      "Show list of end line
+
+" no ~ backup files
+set nobackup
+set nowb
+set noswapfile
 
 nmap <F2> :w!<CR>
 imap <F2> <Esc>:w!<CR>
@@ -81,6 +85,9 @@ set smartcase " Ignore case when searching lowercase
 set showcmd
 set ruler " Show ruler
 "set ch=2 " Make command line two lines high
+
+" make p in visual mode replace the selected text with the yank register
+vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
 " Misc
 " ************************************************************************
