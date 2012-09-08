@@ -1,5 +1,5 @@
 " Detect extra filetypes used in Rails. Part of the rails-toolkit
-"
+
 " Copyright (C) 2007 Neil Wilson <aldursys@gmail.com>
 " "
 " This program is free software; you can redistribute it and/or
