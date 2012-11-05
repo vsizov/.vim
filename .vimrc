@@ -35,6 +35,10 @@ nmap <F2> :w!<CR>
 imap <F2> <Esc>:w!<CR>
 vmap <F2> <Esc>:w!<CR>
 
+nmap <F3> :Ack 
+imap <F3> <Esc>:Ack <CR>
+vmap <F3> <Esc>:Ack <CR>
+
 nmap <F10> :q<CR>
 imap <F10> <Esc>:q<CR>
 vmap <F10> <Esc>:q<CR>
