@@ -12,9 +12,13 @@ map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 set selectmode=mouse
 set mousef
 
+"nerdtree single-click mode
+let NERDTreeMouseMode=3
+
 set runtimepath+=/usr/share/vim/addons
 
-set clipboard=autoselect,unnamed,exclude:cons\|linux
+"set clipboard=autoselect,unnamed,exclude:cons\|linux
+set clipboard+=unamed  " Yanks go on clipboard instead
 set history=10000
 set ic   
 set tabstop=2
@@ -24,12 +28,15 @@ set expandtab
 set nowrap
 set showmatch "Show matching brackets
 set mat=5     "Bracket blinking
-"set list      "Show list of end line
+set list      "Show list of end line
+set listchars=trail:.
 
 " no ~ backup files
 set nobackup
 set nowb
 set noswapfile
+
+:set hidden
 
 nmap <F2> :w!<CR>
 imap <F2> <Esc>:w!<CR>
@@ -91,7 +98,7 @@ set ruler " Show ruler
 "set ch=2 " Make command line two lines high
 
 " make p in visual mode replace the selected text with the yank register
-vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
+"vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
 
 " Misc
 " ************************************************************************
